@@ -10,6 +10,12 @@ set showmode	" display the current mode
 set showmatch   " show the matches when entering parenthesis
 set matchtime=2 " tenths of a second to show the matches when entering parenthesis 
 
+" plugins
+call plug#begin()
+  Plug 'preservim/nerdtree'
+  Plug 'ErichDonGubler/vim-sublime-monokai'
+call plug#end()
+
 " cursor
 "set cursorcolumn
 set scrolloff=7
@@ -115,6 +121,8 @@ nnoremap ct <C-t>
 
 " theme
 set background=dark
+set t_Co=256
+colorscheme sublimemonokai
 
 " set mark column color
 hi! link SignColumn   LineNr
