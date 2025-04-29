@@ -14,6 +14,8 @@ set matchtime=2 " tenths of a second to show the matches when entering parenthes
 call plug#begin()
   Plug 'preservim/nerdtree'
   Plug 'ErichDonGubler/vim-sublime-monokai'
+  Plug 'itchyny/lightline.vim'
+  Plug 'airblade/vim-gitgutter' "]c:next hunk, [c: previous hunk
 call plug#end()
 
 " cursor
